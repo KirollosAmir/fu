@@ -15,7 +15,7 @@ class NewsRepos {
             _id);
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
-      data.map((news) => news.add(News.fromJson(news))).roList();
+      data.map((newss) => news.add(News.fromJson(newss))).toList();
       return news;
     }
   }

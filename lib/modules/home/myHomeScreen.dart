@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fungicide_utilizer_app/modules/Register%20/Register.dart';
 import 'package:fungicide_utilizer_app/modules/login/expertlogin.dart';
 import 'package:fungicide_utilizer_app/modules/login/farmerlogin.dart';
 
@@ -62,7 +63,10 @@ class _WelcomePageState extends State<WelcomePage> {
                 child: ElevatedButton(
                   child: Text('Farmer Register',
                       style: TextStyle(color: Colors.white, fontSize: 18.0)),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => RegisterPage()));
+                  },
                 ),
               ),
               SizedBox(
