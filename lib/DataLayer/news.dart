@@ -4,12 +4,10 @@
 //   DateTime date;
 //   String image;
 // }
-import 'package:flutter/material.dart';
-
 class News {
   String id;
   String date;
-  Image image;
+  String image;
   String title;
   String content;
 

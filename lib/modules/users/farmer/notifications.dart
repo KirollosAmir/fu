@@ -74,6 +74,12 @@ class _Notifcationsstate extends State<Notifcations> {
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(8)),
                                     ),
+                                    child: ListTile(
+                                      subtitle: Text(
+                                          "'${state.notifications[index].date}'"),
+                                      title: Text(
+                                          "'${state.notifications[index].message}'"),
+                                    ),
                                   ));
                             }),
                       ),

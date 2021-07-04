@@ -21,8 +21,8 @@ class NotificationRepos {
       var data = json.decode(response.body);
 
       data
-          .map((notifications) =>
-              notifications.add(Notification.fromJson(notifications)))
+          .map((notification) =>
+              notifications.add(Notification.fromJson(notification)))
           .toList();
       print(data);
       return notifications;
