@@ -16,6 +16,8 @@ import 'BloC/land/landBloc.dart';
 import 'BloC/land/landState.dart';
 import 'BloC/notification/notificationState.dart';
 import 'BloC/notification/notificatioBloc.dart';
+import 'BloC/register/registerBloc.dart';
+import 'BloC/register/registerState.dart';
 import 'modules/home/myHomeScreen.dart';
 import 'modules/users/farmer/news.dart';
 import 'repository/authentication_repo.dart';
@@ -65,6 +67,11 @@ class _MyAppState extends State<MyApp> {
             create: (BuildContext context) {
               return AuthenticationBloc(
                   LoginInitState(), AuthenticationRepos());
+            },
+          ),
+          BlocProvider(
+            create: (BuildContext context) {
+              return RegisterBloc(RegisterInitState(), AuthenticationRepos());
             },
           ),
           BlocProvider(

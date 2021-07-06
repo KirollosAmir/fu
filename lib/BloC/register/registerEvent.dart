@@ -14,3 +14,5 @@ class RegisterButttonPressed extends RegisterEvent {
   String password;
   RegisterButttonPressed({this.name, this.mobile, this.password});
 }
+
+class SignUpSubmitted extends RegisterEvent {}

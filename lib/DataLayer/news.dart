@@ -4,10 +4,12 @@
 //   DateTime date;
 //   String image;
 // }
+
 class News {
   String id;
   String date;
   String image;
+  //Uint8List image;
   String title;
   String content;
 
