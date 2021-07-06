@@ -21,4 +21,18 @@ class ViewHistoryEvent extends LandEvent {}
 
 class ViewStatus extends LandEvent {}
 
+class ResetEvent extends LandEvent {}
+
+// ignore: must_be_immutable
+class SaveLandButttonPressed extends LandEvent {
+  String landname;
+  String crop;
+  String postalcode;
+  String stationserial;
+  SaveLandButttonPressed(
+      {this.landname, this.crop, this.postalcode, this.stationserial});
+}
+
+class AddlandButtonEvent extends LandEvent {}
+
 // class NotificationSeen extends LandEvent {}

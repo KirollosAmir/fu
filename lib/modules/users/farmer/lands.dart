@@ -37,194 +37,6 @@ class _MyLandsPagestate extends State<MyLandsPage> {
     super.dispose();
   }
 
-  // ignore: non_constant_identifier_names
-  // Widget FirstWidget(h, w) {
-  //   return ListView(
-  //     children: [
-  //       Padding(
-  //         padding: EdgeInsets.only(top: h * .05, left: w * .02, right: w * .02),
-  //         child: Container(
-  //           height: h * .2,
-  //           width: w * .6,
-  //           // child: Image.asset('images/man.png'),
-  //         ),
-  //       )
-  //     ],
-  //   );
-  // }
-
-  // ignore: non_constant_identifier_names
-  // Widget SecWidget(h, w) {
-  //   return ListView(
-  //     children: [
-  //       Padding(
-  //         padding: EdgeInsets.only(top: h * .05, left: w * .02, right: w * .02),
-  //       )
-  //     ],
-  //   );
-  // }
-
-  // Future<void> myAlert(h, w) async {
-  //   return showDialog<void>(
-  //     context: context,
-  //     barrierDismissible: false, // user must tap button!
-  //     builder: (BuildContext context) {
-  //       ScreenUtil.init(context,
-  //           designSize: Size(750, 1334), allowFontScaling: false);
-  //       return AlertDialog(
-  //         content: SingleChildScrollView(
-  //             child: Column(
-  //           children: [
-  //             Padding(
-  //               padding: EdgeInsets.only(top: h * .01),
-  //               child: TextFormField(
-  //                 textAlign: TextAlign.right,
-  //                 textDirection: TextDirection.rtl,
-  //                 autofocus: false,
-  //                 onFieldSubmitted: (v) {},
-  //                 decoration: InputDecoration(
-  //                   labelText: 'Crop Name',
-  //                   errorStyle: TextStyle(
-  //                       fontSize: 14,
-  //                       fontWeight: FontWeight.bold,
-  //                       color: Colors.white),
-  //                   enabled: true,
-  //                   filled: true,
-  //                   enabledBorder: OutlineInputBorder(
-  //                     borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                     borderSide: BorderSide(width: 1),
-  //                   ),
-  //                 ),
-  //                 onTap: () {},
-  //                 onChanged: (value) {},
-  //               ),
-  //             ),
-  //             Padding(
-  //               padding: EdgeInsets.only(top: h * .01),
-  //               child: TextFormField(
-  //                 textAlign: TextAlign.right,
-  //                 textDirection: TextDirection.rtl,
-  //                 autofocus: false,
-  //                 onFieldSubmitted: (v) {},
-  //                 decoration: InputDecoration(
-  //                   labelText: 'Station',
-  //                   errorStyle: TextStyle(
-  //                       fontSize: 14,
-  //                       fontWeight: FontWeight.bold,
-  //                       color: Colors.white),
-  //                   enabled: true,
-  //                   filled: true,
-  //                   enabledBorder: OutlineInputBorder(
-  //                     borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                     borderSide: BorderSide(width: 1),
-  //                   ),
-  //                 ),
-  //                 onTap: () {},
-  //                 onChanged: (value) {},
-  //               ),
-  //             ),
-  //             Padding(
-  //               padding: EdgeInsets.only(top: h * .01),
-  //               child: TextFormField(
-  //                 textAlign: TextAlign.right,
-  //                 textDirection: TextDirection.rtl,
-  //                 autofocus: false,
-  //                 onFieldSubmitted: (v) {},
-  //                 decoration: InputDecoration(
-  //                   labelText: 'Weather',
-  //                   errorStyle: TextStyle(
-  //                       fontSize: 14,
-  //                       fontWeight: FontWeight.bold,
-  //                       color: Colors.white),
-  //                   enabled: true,
-  //                   filled: true,
-  //                   enabledBorder: OutlineInputBorder(
-  //                     borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                     borderSide: BorderSide(width: 1),
-  //                   ),
-  //                 ),
-  //                 onTap: () {},
-  //                 onChanged: (value) {},
-  //               ),
-  //             ),
-  //             Padding(
-  //               padding: EdgeInsets.only(top: h * .01),
-  //               child: TextFormField(
-  //                 textAlign: TextAlign.right,
-  //                 textDirection: TextDirection.rtl,
-  //                 autofocus: false,
-  //                 onFieldSubmitted: (v) {},
-  //                 decoration: InputDecoration(
-  //                   labelText: 'Serial Number',
-  //                   errorStyle: TextStyle(
-  //                       fontSize: 14,
-  //                       fontWeight: FontWeight.bold,
-  //                       color: Colors.white),
-  //                   enabled: true,
-  //                   filled: true,
-  //                   enabledBorder: OutlineInputBorder(
-  //                     borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                     borderSide: BorderSide(width: 1),
-  //                   ),
-  //                 ),
-  //                 onTap: () {},
-  //                 onChanged: (value) {},
-  //               ),
-  //             ),
-  //             Padding(
-  //                 padding: EdgeInsets.only(top: h * .05),
-  //                 child: Row(
-  //                   children: [
-  //                     Container(
-  //                       width: w * .3,
-  //                       height: h * .08,
-  //                       alignment: Alignment.center,
-  //                       decoration: BoxDecoration(
-  //                         color: Colors.green,
-  //                         borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                       ),
-  //                       child: InkWell(
-  //                         child: Text('Save',
-  //                             style: TextStyle(color: Colors.white)),
-  //                         onTap: () {
-  //                           setState(() {
-  //                             Navigator.pop(context);
-  //                           });
-  //                         },
-  //                       ),
-  //                     ),
-  //                     Padding(
-  //                       padding: EdgeInsets.only(left: w * .02),
-  //                       child: Container(
-  //                         width: w * .3,
-  //                         height: h * .08,
-  //                         alignment: Alignment.center,
-  //                         decoration: BoxDecoration(
-  //                           color: Colors.red,
-  //                           borderRadius: BorderRadius.all(Radius.circular(10)),
-  //                         ),
-  //                         child: InkWell(
-  //                           child: Text(
-  //                             'Cancel',
-  //                             style: TextStyle(color: Colors.white),
-  //                           ),
-  //                           onTap: () {
-  //                             setState(() {
-  //                               Navigator.pop(context);
-  //                             });
-  //                           },
-  //                         ),
-  //                       ),
-  //                     )
-  //                   ],
-  //                 )),
-  //           ],
-  //         )),
-  //       );
-  //     },
-  //   );
-  // }
-
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
@@ -243,7 +55,187 @@ class _MyLandsPagestate extends State<MyLandsPage> {
         drawer: FarmerDrawer(context),
         //resizeToAvoidBottomPadding: false,
         body: Center(
-          child: BlocBuilder<LandBloc, LandState>(
+          child: BlocConsumer<LandBloc, LandState>(
+            listener: (context, state) {
+              if (state is AddingLandState) {
+                return showDialog<void>(
+                  context: context,
+                  barrierDismissible: false, // user must tap button!
+                  builder: (BuildContext context) {
+                    ScreenUtil.init(context,
+                        designSize: Size(750, 1334), allowFontScaling: false);
+                    return AlertDialog(
+                      content: SingleChildScrollView(
+                          child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: h * .01),
+                            child: TextFormField(
+                              controller: landname,
+                              textAlign: TextAlign.right,
+                              textDirection: TextDirection.rtl,
+                              autofocus: false,
+                              onFieldSubmitted: (v) {},
+                              decoration: InputDecoration(
+                                labelText: 'Land Name',
+                                errorStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                                enabled: true,
+                                filled: true,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
+                                  borderSide: BorderSide(width: 1),
+                                ),
+                              ),
+                              onTap: () {},
+                              onChanged: (value) {},
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: h * .01),
+                            child: TextFormField(
+                              controller: cropname,
+                              textAlign: TextAlign.right,
+                              textDirection: TextDirection.rtl,
+                              autofocus: false,
+                              onFieldSubmitted: (v) {},
+                              decoration: InputDecoration(
+                                labelText: 'Crop Planted',
+                                errorStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                                enabled: true,
+                                filled: true,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
+                                  borderSide: BorderSide(width: 1),
+                                ),
+                              ),
+                              onTap: () {},
+                              onChanged: (value) {},
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: h * .01),
+                            child: TextFormField(
+                              controller: postalcode,
+                              textAlign: TextAlign.right,
+                              textDirection: TextDirection.rtl,
+                              autofocus: false,
+                              onFieldSubmitted: (v) {},
+                              decoration: InputDecoration(
+                                labelText: 'Postal Code',
+                                errorStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                                enabled: true,
+                                filled: true,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
+                                  borderSide: BorderSide(width: 1),
+                                ),
+                              ),
+                              onTap: () {},
+                              onChanged: (value) {},
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: h * .01),
+                            child: TextFormField(
+                              controller: serial,
+                              textAlign: TextAlign.right,
+                              textDirection: TextDirection.rtl,
+                              autofocus: false,
+                              onFieldSubmitted: (v) {},
+                              decoration: InputDecoration(
+                                labelText: 'Weather Station Serial Number',
+                                errorStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                                enabled: true,
+                                filled: true,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
+                                  borderSide: BorderSide(width: 1),
+                                ),
+                              ),
+                              onTap: () {},
+                              onChanged: (value) {},
+                            ),
+                          ),
+                          Padding(
+                              padding: EdgeInsets.only(top: h * .05),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: w * .3,
+                                    height: h * .08,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      color: Colors.green,
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(10)),
+                                    ),
+                                    child: InkWell(
+                                      child: Text('Save',
+                                          style:
+                                              TextStyle(color: Colors.white)),
+                                      onTap: () {
+                                        bloc.add(SaveLandButttonPressed(
+                                            landname: landname.text,
+                                            crop: cropname.text,
+                                            postalcode: postalcode.text,
+                                            stationserial: serial.text));
+
+                                        setState(() {
+                                          bloc.add(ResetEvent());
+                                          Navigator.pop(context);
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(left: w * .02),
+                                    child: Container(
+                                      width: w * .3,
+                                      height: h * .08,
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
+                                      ),
+                                      child: InkWell(
+                                        child: Text(
+                                          'Cancel',
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        onTap: () {
+                                          setState(() {
+                                            Navigator.pop(context);
+                                          });
+                                        },
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )),
+                        ],
+                      )),
+                    );
+                  },
+                );
+              }
+            },
             // ignore: missing_return
             builder: (context, state) {
               if (state is LandInitiallState) {
@@ -301,212 +293,14 @@ class _MyLandsPagestate extends State<MyLandsPage> {
                                         size: 30,
                                         color: Colors.green,
                                       ),
-                                      onTap: () {},
+                                      onTap: () {
+                                        bloc.add(AddlandButtonEvent());
+                                      },
                                     ))
                               ],
                             ),
                             onTap: () {
-                              return showDialog<void>(
-                                context: context,
-                                barrierDismissible:
-                                    false, // user must tap button!
-                                builder: (BuildContext context) {
-                                  ScreenUtil.init(context,
-                                      designSize: Size(750, 1334),
-                                      allowFontScaling: false);
-                                  return AlertDialog(
-                                    content: SingleChildScrollView(
-                                        child: Column(
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              EdgeInsets.only(top: h * .01),
-                                          child: TextFormField(
-                                            controller: landname,
-                                            textAlign: TextAlign.right,
-                                            textDirection: TextDirection.rtl,
-                                            autofocus: false,
-                                            onFieldSubmitted: (v) {},
-                                            decoration: InputDecoration(
-                                              labelText: 'Land Name',
-                                              errorStyle: TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white),
-                                              enabled: true,
-                                              filled: true,
-                                              enabledBorder: OutlineInputBorder(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(10)),
-                                                borderSide:
-                                                    BorderSide(width: 1),
-                                              ),
-                                            ),
-                                            onTap: () {},
-                                            onChanged: (value) {},
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsets.only(top: h * .01),
-                                          child: TextFormField(
-                                            controller: cropname,
-                                            textAlign: TextAlign.right,
-                                            textDirection: TextDirection.rtl,
-                                            autofocus: false,
-                                            onFieldSubmitted: (v) {},
-                                            decoration: InputDecoration(
-                                              labelText: 'Crop Planted',
-                                              errorStyle: TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white),
-                                              enabled: true,
-                                              filled: true,
-                                              enabledBorder: OutlineInputBorder(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(10)),
-                                                borderSide:
-                                                    BorderSide(width: 1),
-                                              ),
-                                            ),
-                                            onTap: () {},
-                                            onChanged: (value) {},
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsets.only(top: h * .01),
-                                          child: TextFormField(
-                                            controller: postalcode,
-                                            textAlign: TextAlign.right,
-                                            textDirection: TextDirection.rtl,
-                                            autofocus: false,
-                                            onFieldSubmitted: (v) {},
-                                            decoration: InputDecoration(
-                                              labelText: 'Postal Code',
-                                              errorStyle: TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white),
-                                              enabled: true,
-                                              filled: true,
-                                              enabledBorder: OutlineInputBorder(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(10)),
-                                                borderSide:
-                                                    BorderSide(width: 1),
-                                              ),
-                                            ),
-                                            onTap: () {},
-                                            onChanged: (value) {},
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsets.only(top: h * .01),
-                                          child: TextFormField(
-                                            controller: serial,
-                                            textAlign: TextAlign.right,
-                                            textDirection: TextDirection.rtl,
-                                            autofocus: false,
-                                            onFieldSubmitted: (v) {},
-                                            decoration: InputDecoration(
-                                              labelText:
-                                                  'Weather Station Serial Number',
-                                              errorStyle: TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white),
-                                              enabled: true,
-                                              filled: true,
-                                              enabledBorder: OutlineInputBorder(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(10)),
-                                                borderSide:
-                                                    BorderSide(width: 1),
-                                              ),
-                                            ),
-                                            onTap: () {},
-                                            onChanged: (value) {},
-                                          ),
-                                        ),
-                                        Padding(
-                                            padding:
-                                                EdgeInsets.only(top: h * .05),
-                                            child: Row(
-                                              children: [
-                                                Container(
-                                                  width: w * .3,
-                                                  height: h * .08,
-                                                  alignment: Alignment.center,
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.green,
-                                                    borderRadius:
-                                                        BorderRadius.all(
-                                                            Radius.circular(
-                                                                10)),
-                                                  ),
-                                                  child: InkWell(
-                                                    child: Text('Save',
-                                                        style: TextStyle(
-                                                            color:
-                                                                Colors.white)),
-                                                    onTap: () {
-                                                      bloc.add(
-                                                          SaveLandButttonPressed(
-                                                              landname:
-                                                                  landname.text,
-                                                              crop:
-                                                                  cropname.text,
-                                                              postalcode:
-                                                                  postalcode
-                                                                      .text,
-                                                              stationserial:
-                                                                  serial.text));
-                                                      // setState(() {
-                                                      //   Navigator.pop(context);
-                                                      // });
-                                                    },
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsets.only(
-                                                      left: w * .02),
-                                                  child: Container(
-                                                    width: w * .3,
-                                                    height: h * .08,
-                                                    alignment: Alignment.center,
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.red,
-                                                      borderRadius:
-                                                          BorderRadius.all(
-                                                              Radius.circular(
-                                                                  10)),
-                                                    ),
-                                                    child: InkWell(
-                                                      child: Text(
-                                                        'Cancel',
-                                                        style: TextStyle(
-                                                            color:
-                                                                Colors.white),
-                                                      ),
-                                                      onTap: () {
-                                                        setState(() {
-                                                          Navigator.pop(
-                                                              context);
-                                                        });
-                                                      },
-                                                    ),
-                                                  ),
-                                                )
-                                              ],
-                                            )),
-                                      ],
-                                    )),
-                                  );
-                                },
-                              );
+                              bloc.add(AddlandButtonEvent());
                             }
                             // setState(() {
                             //   myAlert(h, w);
@@ -819,9 +613,6 @@ class _MyLandsPagestate extends State<MyLandsPage> {
                   ],
                 );
               }
-              // ignore: unused_label
-              child:
-              Container();
             },
           ),
         ));

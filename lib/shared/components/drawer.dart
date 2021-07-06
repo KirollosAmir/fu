@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fungicide_utilizer_app/modules/home/myHomeScreen.dart';
+import 'package:fungicide_utilizer_app/modules/messenger/messenger_screen.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/allcrops.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/cropchecker.dart';
-import 'package:fungicide_utilizer_app/modules/users/farmer/mylands.dart';
+import 'package:fungicide_utilizer_app/modules/users/farmer/lands.dart';
+//import 'package:fungicide_utilizer_app/modules/users/farmer/mylands.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/news.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -82,7 +84,6 @@ Widget FarmerDrawer(context) {
           },
         ),
       ),
-
       //Profile
       // Card(
       //   child: ListTile(

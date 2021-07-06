@@ -27,3 +27,10 @@ class ViewLandSuccessState extends LandState {
   final LandModel land;
   ViewLandSuccessState({this.land});
 }
+
+class AddingLandState extends LandState {}
+
+class AddLandSuccessState extends LandState {
+  final String message;
+  AddLandSuccessState({this.message});
+}
