@@ -13,6 +13,8 @@ class CropChecker extends StatefulWidget {
 }
 
 class _CropCheckerState extends State<CropChecker> {
+  String dropdownvalue = 'Apple';
+  var items = ['Apple', 'Tomato', 'Potato', 'Corn'];
   static final String uploadEndPoint =
       'https://fungicideutilizer.herokuapp.com/checker';
   Future<File> file;
@@ -47,7 +49,7 @@ class _CropCheckerState extends State<CropChecker> {
   upload(String fileName) {
     http.post(uploadEndPoint, body: {
       "file": base64Image,
-      "crop": 'tomato',
+      "crop": dropdownvalue,
     }).then((result) {
       setStatus(result.statusCode == 200 ? result.body : errMessage);
     }).catchError((error) {
@@ -96,6 +98,23 @@ class _CropCheckerState extends State<CropChecker> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Container(
+              child: Center(
+                child: DropdownButton(
+                  value: dropdownvalue,
+                  icon: Icon(Icons.keyboard_arrow_down),
+                  items: items.map((String items) {
+                    return DropdownMenuItem(value: items, child: Text(items));
+                  }).toList(),
+                  onChanged: (String newValue) {
+                    setState(() {
+                      dropdownvalue = newValue;
+                    });
+                  },
+                ),
+              ),
+            ),
+            Center(child: Text("Select Crop")),
             OutlineButton(
               onPressed: chooseImage,
               child: Text('Choose Image'),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fungicide_utilizer_app/modules/home/myHomeScreen.dart';
-import 'package:fungicide_utilizer_app/modules/users/farmer/allcrops.dart';
+// import 'package:fungicide_utilizer_app/modules/users/farmer/allcrops.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/cropchecker.dart';
+import 'package:fungicide_utilizer_app/modules/users/farmer/crops.dart';
+//import 'package:fungicide_utilizer_app/modules/users/farmer/lands.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/mylands.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/news.dart';
 import 'package:fungicide_utilizer_app/modules/users/farmer/notifications.dart';
@@ -72,13 +74,23 @@ Widget FarmerDrawer(context) {
         ),
       ),
 
+      // Card(
+      //   child: ListTile(
+      //     title: Text('All Crops'),
+      //     trailing: Icon(Icons.create),
+      //     onTap: () {
+      //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+      //           builder: (BuildContext context) => AllCropsPage()));
+      //     },
+      //   ),
+      // ),
       Card(
         child: ListTile(
           title: Text('All Crops'),
           trailing: Icon(Icons.create),
           onTap: () {
             Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (BuildContext context) => AllCropsPage()));
+                builder: (BuildContext context) => CropsPage()));
           },
         ),
       ),

@@ -20,7 +20,7 @@ class _AllCropsPagestate extends State<AllCropsPage> {
   void initState() {
     bloc = BlocProvider.of<CropsBloc>(context);
 
-    bloc.add(ViewCropEvent());
+    bloc.add(ViewCropsEvent());
 
     super.initState();
   }
